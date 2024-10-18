@@ -1,0 +1,6 @@
+sudo swapoff /swapfile
+sudo rm /swapfile
+sudo fallocate -l 100G /swapfile  # Adiciona 16GB de swap
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
